@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<title>Login</title>
+	<link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <br>
+    <br>
+        <div class="cont">
+            <div class="form sign-in">
+                    <h2>Welcome</h2>
+                    <form onsubmit="login()" id="loginForm"></form>
+                    <label>
+                        <span>Email</span>
+                        <input type="email" />
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" />
+                    </label>
+                    <p class="forgot-pass">Forgot password?</p>
+                    <button onclick="location.href='menu.html'" type="signin" class="submit">Sign In</button>
+                </form>
+             
+            </div>
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img__text m--up">
+                     
+                        <h3>Don't have an account? Please Sign up!<h3>
+                    </div>
+                    <div class="img__text m--in">
+                    
+                        <h3>If you already have an account, just sign in.<h3>
+                    </div>
+                    <div class="img__btn">
+                        <span class="m--up">Sign Up</span>
+                        <span class="m--in">Sign In</span>
+                    </div>
+                </div>
+                <div class="form sign-up">
+                    <h2>Create your Account</h2>
+                    <form action="" id="contactForm">
+                        <label>First Name</label>
+                        <input type="text" id="firstname"/>
+                    
+                        <label>Last Name</label>
+                        <input type="text" id="lastname"/>
+
+                        <label>Email</label>
+                        <input type="email" id="email"/>
+                    
+                        <label>Password</label>
+                        <input type="password" id="password"/>
+                        
+                        <button type="submit" class="submit" onclick="location.href='login.html'">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js"></script>
+
+        <script src="./mail.js" type="module"></script>
+        <script>
+            document.querySelector('.img__btn').addEventListener('click', function() {
+                document.querySelector('.cont').classList.toggle('s--signup');
+            });
+        </script>
+</body>

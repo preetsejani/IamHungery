@@ -1,0 +1,170 @@
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-image: url(pizza.jpg);
+    background-size:cover;
+    height:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+   /* Navigation menu */
+  .navbar{
+    display: flex;  
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive; 
+    font-weight: bolder;
+    font-size: larger;
+    
+    }
+  
+  .navbar ul{
+   display: flex;
+   background-color:rgba(0, 0, 0, 0.616);
+   margin-left: 3%;
+   margin-top: 3%;
+   padding:10px;
+   border-radius:20px;
+  }
+  
+  .navbar li{
+    
+      list-style: none;
+      height: 25px;
+      margin: 10px 15px 20px;
+      
+  }
+  
+  
+  .navbar ul::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    display: inline;
+    height: 48px;
+    width: 555px;
+    opacity: 2.8;
+    z-index: -1;
+    border-radius: 57px;
+    border-style: solid;
+  
+      
+  }
+  .navbar li a{
+      color: white;
+      display: block;
+      padding: 3px 22px;
+      border-radius: 15px;
+      text-decoration: none;
+      
+  }
+  .navbar li a:hover{
+      color: black;
+      background-color: white;
+    }
+  
+  
+  h3{
+    color: white;
+    position: relative;
+    right: -14px;
+    font-weight: bolder;
+    top: -28px;
+  
+  }
+  
+  #services-container{
+      text-align: center;
+      position: relative;
+      top: 150px;
+   }
+  
+  .services{
+  display: flex;
+  }
+  
+  /* clients section */
+  
+  #clients-container{
+    text-align: center;  
+    position: relative;
+    top: 200px;  
+   }  
+   
+   
+   
+  
+  .clients img{
+    margin: 9px 45px;
+    height: 168px;
+  }
+  #clients-container::before{
+    content: "";
+      background-image: url(img/bg2.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 378px;
+      width: 100%;
+      position: absolute;
+      z-index: -1;
+      opacity: 0.3;
+      top: 0px;
+      left: 0px;
+  }
+  
+  /* Contact section */
+  
+  
+  #contact-container{
+   position: relative;
+   top: 260px;
+   font-family: 'Bree Serif', serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  }
+  
+   #contact-container::before{
+    content: "";
+    background-image: url(img/contact.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+  width: 100%;
+  height: 40rem;
+  z-index: -1;
+  opacity: 0.8;
+  
+   }
+  
+  
+  /* Utility classes */
+  .welcome{
+    font-size:50px;
+    font-family: 'Bree Serif', serif;
+    text-align: left;
+    color: white;
+    margin-left: 5%;
+    color:white;
+  }
+
+  .quote{
+    color: white;
+    margin-left: 5%;
+  }
+
+  .line{
+    color: white;
+    margin-left: 5%;
+    margin-top: -20px;
+  }
+  
+ 
